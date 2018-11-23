@@ -9,8 +9,8 @@
   <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css'>
 <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css'>
 <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Raleway:500,600,700"'>
-
-      <link rel="stylesheet" href="css/style.css">
+      {% load static %}
+      <link rel="stylesheet" href="{% static 'css/loggedin.css'%}">
 
   
 </head>
@@ -27,7 +27,9 @@
         <span class="icon-bar"></span>
       </button>
       <a class="navbar-brand" href="#indexPage">
-        <img src="img/ma.png">
+        {% load static %}
+        <img src="{% static 'img/ma.png'%">
+        }
       </a>
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
@@ -48,7 +50,8 @@
       <div class="container">
         <div class="col-md-4">
           <div class="img-div">
-            <img src="img/logo.png" class="img-circle mx-auto img-responsive" alt="">
+            {% load static %}
+            <img src="{% static 'img/logo.png'%}" class="img-circle mx-auto img-responsive" alt="">
           </div>
         </div>
         <div class="col-md-8">
@@ -113,7 +116,9 @@
         <div class="col-lg-12">
           <div class="panel panel-default card">
             <div class="panel-body">
-              <img src="img/jal.jpg" class="img-responsive" alt="Jaalakam">
+              {% load static %}
+              <img src="{% static 'img/jal.jpg' %}" class="img-responsive" alt="Jaalakam">
+              }
             </div>
             <div class="panel-footer">
               Jaalakam'18, a 2 day programme conducted for a group of specially talented people; students of Swanthwnam special school,kothamangalam, to open their windows of colours, to dance with the tunes of this butterfly..
@@ -126,7 +131,8 @@
                 <div class="col-lg-6 col-sm-12">
           <div class="panel panel-default card">
             <div class="panel-body">
-              <img src="img/blood.jpg" class="img-responsive" alt="Blood Donation">
+              {% load static %}
+              <img src="{% static 'img/blood.jpg' %}" class="img-responsive" alt="Blood Donation">
             </div>
             <div class="panel-footer">
               Give the gift of life.. DONATE BLOOD <br>Blood Donation Camp in association with Rotary Club of Kothamangalam @ Mar Athanasius College of Engineering
@@ -138,7 +144,8 @@
          <div class="col-lg-6 col-sm-12">
           <div class="panel panel-default card">
             <div class="panel-body">
-              <img src="img/med.jpg" class="img-responsive" alt="Med Camp">
+              {% load static %}
+              <img src="{% static 'img/med.jpg'%}" class="img-responsive" alt="Med Camp">
             </div>
             <div class="panel-footer">
               Free Consultation Medical Camp💉 2 day camp ✨💕 @ Mar Athanasius College of Engineering
@@ -149,7 +156,8 @@
         <div class="col-lg-6 col-sm-12">
           <div class="panel panel-default card">
             <div class="panel-body">
-              <img src="img/pun.jpg" class="img-responsive" alt="PUNARJJANI">
+              {% load static %}
+              <img src="{% static 'img/pun.jpg'%}" class="img-responsive" alt="PUNARJJANI">
             </div>
             <div class="panel-footer">
               Punarjjani is a state wide initiative of the Kerala State Youth Welfare Board and Technical Cell of NSS, aimed at repairing damaged and out of use furnitures...
@@ -162,7 +170,8 @@
         <div class="col-lg-6 col-sm-12">
           <div class="panel panel-default card">
             <div class="panel-body">
-              <img src="img/flood.jpg" class="img-responsive" alt="Rebuild Kerala">
+              {% load static %}
+              <img src="{% static 'img/flood.jpg'%}" class="img-responsive" alt="Rebuild Kerala">
             </div>
             <div class="panel-footer">
               Rebuild Kerala is one of the major project started to bring back the real essence of our Kerala after the tragic appearance of flood throughout the state...
@@ -220,8 +229,8 @@
 <script src='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js'></script>
 
   
-
-    <script  src="js/index.js"></script>
+    {% load static %}
+    <script  src="{% static 'js/loggedin.js'%}"></script>
 
 
 
