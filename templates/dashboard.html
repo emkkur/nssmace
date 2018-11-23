@@ -28,8 +28,7 @@
       </button>
       <a class="navbar-brand" href="#indexPage">
         {% load static %}
-        <img src="{% static 'img/ma.png'%">
-        }
+        <img src="{% static 'img/ma.png'%}">
       </a>
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
@@ -37,7 +36,11 @@
         <li><a href="#aboutPage"><i class="fa fa-info"></i> About</a></li>
         <li><a href="#projectsPage"><i class="fa fa-picture-o"></i> Projects</a></li>
         <li><a href="#contactPage"><i class="fa fa-envelope"></i> Contact</a></li>
-        <li><a href=""><i class="fa fa-user-o "></i> Logout</a></li>
+        {% if user.is_authenticated %}
+          <li><a href="logout"><i class="fa fa-user-o "></i> {{request.user}}</a></li>
+        {% else %}
+          <li><a href="{% url 'login' %}"><i class="fa fa-user-o "></i> Login</a></li>
+        {% endif %}
       </ul>
     </div>
   </div>
@@ -59,16 +62,20 @@
           <p>
             NOT ME BUT YOU <i class="fa fa-exclamation"></i>
           </p>
+          {%  if request.user.is_authenticated %}
           <div id="callToActionButtons">
             <div class="row">
               <div class="col-xs-6">
-                <a href=""><button class="modernBtn">Blood Bank</button></a>
+                <a href="bloodbank"><button class="modernBtn">Blood Bank</button></a>
               </div>
               <div class="col-xs-6">
-                <a href=""><button class="modernBtn">Attendence</button></a>
+                <a href="attendance"><button class="modernBtn">Attendence</button></a>
               </div>
             </div>
           </div>
+          {% else %}
+            <!-- Not logged in content -->
+          {% endif %}
         </div>
       </div>
     </div>

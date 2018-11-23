@@ -34,6 +34,7 @@ STATICFILES_DIRS = [os.path.join(BASE_DIR, "assets"),]
 
 INSTALLED_APPS = [
     'attendance',
+    'bloodbank',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',

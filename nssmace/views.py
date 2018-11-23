@@ -1,6 +1,8 @@
 from django.http import HttpResponse
+from django.contrib import admin
 from django.shortcuts import render
+from django.shortcuts import redirect
 
 def index(request):
-	context = {'username':'sds'}
-	return render(request, 'demo.html',context)
+
+	return render(request, 'dashboard.html')

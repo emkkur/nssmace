@@ -19,7 +19,8 @@ from . import views
 
 urlpatterns = [
     path('attendance/',include('attendance.urls')),
+    path('bloodbank/',include('bloodbank.urls')),
     path('admin/', admin.site.urls),
-    path('login/',include('django.contrib.auth.urls')),
+    path('',include('django.contrib.auth.urls')),
     path('',views.index)
 ]
