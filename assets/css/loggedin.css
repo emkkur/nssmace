@@ -1,0 +1,551 @@
+/* General Styles 
+====================================== */
+
+body,
+html {
+  font-family: 'Raleway', Sans-serif;
+  font-weight: 500;
+}
+
+.navbar.navbar-inverse {
+  border-radius: 0;
+  background: #fff;
+  border: none;
+  font-weight: bolder;
+  font-family: 'Open Sans Condensed', Sans-serif;
+  margin: 0;
+  padding: 5px 0;
+}
+
+.navbar-inverse .navbar-toggle {
+  background: #fff;
+  border-color: #333;
+}
+
+.navbar-inverse .navbar-toggle:hover {
+  background: #333;
+}
+
+.navbar-inverse .navbar-toggle:hover>.icon-bar {
+  background: #fff;
+}
+
+.navbar-inverse .navbar-toggle:focus>.icon-bar {
+  background: #fff;
+}
+
+.navbar-inverse .navbar-toggle .icon-bar {
+  background: #000;
+}
+
+.navbar-inverse .navbar-brand {
+  font-weight: lighter;
+  font-size: 25px;
+  padding: 0;
+}
+
+.navbar-inverse .navbar-brand>img {
+  height: 100%;
+  padding: 5px 0 5px 15px;
+}
+
+.navbar-inverse .navbar-brand:hover {
+  color: #333;
+}
+
+.navbar-inverse .navbar-brand:focus {
+  color: #333;
+}
+
+.navbar-inverse .navbar-brand,
+.navbar-inverse .navbar-nav>li>a {
+  color: #333;
+  transition: all 0.3s ease-out;
+}
+
+.navbar-inverse .navbar-nav>li>a:hover {
+  color: #33cccc;
+}
+
+.navbar-inverse .navbar-nav>li>a:focus {
+  color: #b22222;
+}
+
+.navbar.navbar-inverse .container {
+  width: 95vw;
+}
+
+html {
+  height: 100%;
+}
+
+.content {
+  padding: 0;
+  margin: 0;
+  height: 100%;
+}
+
+.content a {
+  text-decoration: none;
+  color: inherit;
+
+}
+
+.thumbnail,
+.img-div {
+  padding: 0;
+  border-radius: 0;
+  width: 250px;
+  margin: auto;
+}
+
+.thumbnail img {
+  width: 100%;
+  transition: all 0.5s ease-out;
+}
+
+.modernBtn {
+  font-size: 20px;
+  text-align: center;
+  background: transparent;
+  border: 2px solid #fff;
+  width: 150px;
+  padding: 10px 0;
+  transition: all 0.5s ease-out;
+}
+
+.modernBtn:hover {
+  background: #fff;
+  color: #333;
+}
+
+.modernBtn:focus,
+.modernBtnBlue.createNew:focus,
+.card-btn:focus {
+  outline: none;
+}
+
+.modernBtnBlue {
+  margin: 10px auto;
+  font-size: 18px;
+  padding: 5px 10px;
+  background: transparent;
+  color: #2C3E50;
+  border: 2px solid #2C3E50;
+  font-weight: 500;
+  transition: all 0.5s ease-out;
+}
+
+.modernBtnBlue:hover,
+.card-btn:hover {
+  background: #2C3E50;
+  color: #fff;
+}
+
+.modernBtnBlue.createNew {
+  font-size: 35px;
+  padding-top: 5px;
+  position: fixed;
+  top: 85%;
+  right: calc((100vw / 50));
+}
+
+.container-fluid {
+  padding: 0;
+}
+
+.jumbotron.banner {
+  border-radius: 0;
+  padding: 0;
+  transition: all 0.5s ease-out;
+}
+
+.banner {
+  height: calc((100vh - 60px)/3);
+  max-height: 500px;
+  min-height: 290px;
+  background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), #2C3E50;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.banner .container {
+  text-align: center;
+  margin-bottom: calc((100vh - 60px)/9);
+ }
+
+.banner header {
+  color: White;
+  font-size: 2.5em;
+  margin-top: calc((100vh - 60px)/9);
+
+}
+
+.afterBanner {
+  min-height: calc(100vh - (100vh - 60px)/3);
+}
+
+.panel-default.card {
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  transition: all 0.3s cubic-bezier(.25, .8, .25, 1);
+}
+
+.panel-default.card:hover {
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+
+.card .panel-body {
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+  padding: 0;
+}
+
+.card .panel-body img {
+  width: 100%;
+}
+
+.card .panel-footer {
+  border-radius: 0;
+  padding: 35px;
+  background: #fff;
+  font-size: 15px;
+  font-weight: bolder;
+  text-align: center;
+}
+
+.card-btn {
+  transition: all 0.5s ease-out;
+  border-radius: 0;
+  border: 2px solid #2C3E50;
+  padding: 10px 25px;
+  background: transparent;
+  color: #333;
+}
+
+
+/* Media Query 
+=========================================================*/
+
+@media only screen and (max-width: 992px) {
+  .card .panel-body img {
+    height: 274px;
+  }
+}
+
+
+/* Extra Small Devices, Phones */
+
+@media only screen and (max-width: 540px) {
+  .card .panel-body img {
+    height: auto;
+  }
+}
+
+@media only screen and (max-device-width: 414px) {}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 732px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {}
+
+
+/* Media Query 
+=========================================================*/
+
+
+/* Specific Styles 
+=========================================================*/
+
+
+/* INDEX 
+=========================================================*/
+
+
+/*-> Media Queries <-*/
+
+
+/* Medium Devices, Desktops */
+
+@media only screen and (max-width: 992px) {
+  #indexPage .col-md-8 p {
+    text-align: center;
+    transition: all 0.5s ease-out;
+    font-size: 23px;
+  }
+  #indexPage #callToActionButtons .col-xs-6 {
+    text-align: center;
+  }
+  #indexPage .modernBtn {
+    margin: 15px auto;
+  }
+}
+
+
+/* Extra Small Devices, Phones */
+
+@media only screen and (max-width: 540px) {
+  #indexPage #callToActionButtons .col-xs-4 {
+    text-align: center;
+  }
+  #indexPage .modernBtn {
+    margin: 5px auto;
+    font-size: 20px;
+    width: 120px;
+    padding: 5px 0;
+  }
+}
+
+@media only screen and (max-device-width: 414px) {
+  .container-fluid#indexPage .container {
+    padding-top: calc((100vh - 60px)/5);
+
+  }
+  #indexPage .img-div {
+    width: 350px;
+    margin-bottom: 2em;
+  }
+  #indexPage .col-md-8 p {
+    color: #fff;
+    font-weight: 600;
+    font-size: 1.6em;
+    text-transform: uppercase;
+  }
+  #indexPage .modernBtn {
+    margin: 0.5em auto;
+    font-size: 1.4em;
+    width: 6em;
+    padding: 0.5em 0;
+  }
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 732px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
+  .container-fluid#indexPage .container {
+    margin-top: -6em;
+  }
+  #indexPage .img-div {
+    width: 225px;
+    margin-bottom: 0;
+  }
+  #indexPage .col-md-8 p {
+    font-size: 1em;
+  }
+  #indexPage .modernBtn {
+    margin: 0 auto;
+    font-size: 1em;
+    padding: 0.5em 0;
+    width: 7em;
+  }
+}
+
+
+/*-> Media Queries <-*/
+
+#indexPage>.container-fluid {
+  background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://images.pexels.com/photos/2324/skyline-buildings-new-york-skyscrapers.jpg?w=1260&h=750&auto=compress&cs=tinysrgb");
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  height: calc(100vh);
+  transition: all 0.5s ease-out;
+  overflow-y: hidden;
+}
+
+#indexPage .container {
+  max-width: 1000px;
+  padding: 18% 0;
+
+  font-family: 'Raleway', Sans-serif;
+
+}
+
+#indexPage .col-md-8 {
+  padding: 35px;
+  margin: 0;
+  color: #fff;
+  font-weight: 600;
+  font-size: 25px;
+  text-transform: uppercase;
+}
+
+#indexPage #callToActionButtons {
+  margin: 30px auto;
+}
+
+
+/* INDEX 
+=========================================================*/
+
+
+/* ABOUT 
+=========================================================*/
+
+
+/*-> Media Queries <-*/
+
+
+/* Medium Devices, Desktops */
+
+@media only screen and (max-width: 992px) {}
+
+
+/* Extra Small Devices, Phones */
+
+@media only screen and (max-width: 540px) {}
+
+@media only screen and (max-device-width: 414px) {}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 732px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {}
+
+
+/*-> Media Queries <-*/
+
+#aboutPage #info > .container {
+  margin-top: 12vmin;
+  margin-bottom: 12vmin;
+  padding: 5vmin;
+  width: 90vmin;
+  font-weight: 600;
+  font-size: 1.3em;
+  text-align: center;
+  line-height: 160%;
+  border: 5px outset teal;
+  border-top-left-radius: 5vmin;
+  border-bottom-right-radius: 5vmin;
+  transition: all 0.3s linear;
+}
+
+#aboutPage #info > .container:hover {
+  background: teal;
+  color: #fff;
+}
+
+
+/* ABOUT 
+=========================================================*/
+
+
+/* PROJECTS 
+=========================================================*/
+
+
+/*-> Media Queries <-*/
+
+
+/* Medium Devices, Desktops */
+
+@media only screen and (max-width: 992px) {}
+
+
+/* Extra Small Devices, Phones */
+
+@media only screen and (max-width: 540px) {}
+
+@media only screen and (max-device-width: 414px) {}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 732px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {}
+
+
+/*-> Media Queries <-*/
+
+#projectsPage #content {
+  /*border:1px solid black;*/
+}
+
+#projectsPage .banner .container {
+  padding: 0 30px;
+}
+
+#projectsPage .banner header,
+#aboutPage .banner header,
+#contactPage .banner header {
+  margin-bottom: 30px;
+}
+
+#projectsPage .banner .modernBtn,
+#aboutPage .banner .modernBtn,
+#contactPage .banner .modernBtn {
+  color: white;
+  font-weight: 600;
+}
+
+#projectsPage .banner .modernBtn:hover,
+#aboutPage .banner .modernBtn:hover,
+#contactPage .banner .modernBtn:hover {
+  color: #333;
+}
+
+#projectsPage #projects {
+  width: 85vw;
+  max-width: 1200px;
+  padding: 80px 30px;
+}
+
+#projectsPage .col-lg-4 {
+  margin: 5px auto;
+}
+
+
+/* PROJECTS 
+=========================================================*/
+
+
+/* CONTACT 
+=========================================================*/
+
+
+/*-> Media Queries <-*/
+
+
+/* Medium Devices, Desktops */
+
+@media only screen and (max-width: 992px) {}
+
+
+/* Extra Small Devices, Phones */
+
+@media only screen and (max-width: 540px) {}
+
+@media only screen and (max-device-width: 414px) {}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 732px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {}
+
+
+/*-> Media Queries <-*/
+
+#form {
+  width: 60vw;
+  max-width: 700px;
+  border: 10px inset #2C3E50;
+  padding: 60px;
+  margin: 50px auto;
+}
+
+#form textarea {
+  resize: none;
+}
+
+#form .form-control {
+  margin-bottom: 30px;
+}
+
+#form .btn-primary {
+  background: transparent;
+  border: 1px solid #2C3E50;
+  border-radius: 0;
+  color: #333;
+  font-weight: bolder;
+  transition: all 0.5s ease-out;
+}
+
+#form .btn-primary:hover {
+  color: #fff;
+  background: #2C3E50;
+}
+
+
+/* CONTACT 
+=========================================================*/
