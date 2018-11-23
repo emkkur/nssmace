@@ -4,6 +4,9 @@ from .models import Donor
 
 class PostForm(forms.ModelForm):
 
-    class Meta:
-        model = Donor
-        fields = ('location', 'blood_type')
+	location = forms.CharField(required=False)
+	blood_type = forms.CharField(required=False)
+
+	class Meta:
+		model = Donor
+		fields = ('location', 'blood_type')

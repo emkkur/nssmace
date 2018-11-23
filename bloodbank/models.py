@@ -1,14 +1,14 @@
 from django.db import models
 
 class Donor(models.Model):
-    bloodgroups = (('O Positive', 'O Positive'),
-               ('O Negative', 'O Negative'),
-               ('A Positive', 'A Positive'),
-               ('A Negative', 'A Negative'),
-               ('B Positive', 'B Positive'),
-               ('B Negative', 'B Negative'),
-               ('AB Negative', 'AB Negative'),
-               ('AB Positive', 'AB Positive'),
+    bloodgroups = (('O+', 'O+'),
+               ('O-', 'O-'),
+               ('A+', 'A+'),
+               ('A-', 'A-'),
+               ('B+', 'B+'),
+               ('B-', 'B-'),
+               ('AB-', 'AB-'),
+               ('AB+', 'AB+'),
                )
     genderchoice = (('M', 'Male'),
                ('F', 'Female'),
