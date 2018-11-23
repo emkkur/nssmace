@@ -1,0 +1,27 @@
+{% load django_tables2 %}
+	
+	<a href="{{unit.id}}/new/">New Attendance</a>  <a href="{{unit.id}}/view/">Previous Attendance</a><br/>
+
+	<table border="1" cellpadding="5">
+		<tr>
+			<th>Sl.No</th>
+			<th>Admission No</th>
+			<th>Student Name</th>
+			<th>Gender</th>
+			<th>Date of Birth</th>
+			<th>Contact No</th>
+			<th></th>
+		</tr>
+
+    {% for row in students %}
+    	<tr>
+    		<td>{{forloop.counter}}</td>
+    		<td>{{row.admission_no}}</td>
+    		<td>{{row.name}}</td>
+    		<td>{{row.gender}}</td>
+    		<td>{{row.dob}}</td>
+    		<td>{{row.contact_number}}</td>
+    		<td><a href="../student/{{row.id}}">View</a></td>
+    	</tr>
+    {% endfor%}
+	</table>
