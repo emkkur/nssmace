@@ -18,6 +18,7 @@ from bloodbank.models import Donor
 
 def results(request):
 	form = PostForm()
+
 	output = Donor.objects.all();
 
 	return render(request, 'results.html', {'form':form,'output': output})
