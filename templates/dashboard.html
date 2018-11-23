@@ -37,7 +37,7 @@
         <li><a href="#projectsPage"><i class="fa fa-picture-o"></i> Projects</a></li>
         <li><a href="#contactPage"><i class="fa fa-envelope"></i> Contact</a></li>
         {% if user.is_authenticated %}
-          <li><a href="logout"><i class="fa fa-user-o "></i> {{request.user}}</a></li>
+          <li><a href="{% url 'logout' %}"><i class="fa fa-user-o "></i> {{request.user}}</a></li>
         {% else %}
           <li><a href="{% url 'login' %}"><i class="fa fa-user-o "></i> Login</a></li>
         {% endif %}
@@ -66,10 +66,10 @@
           <div id="callToActionButtons">
             <div class="row">
               <div class="col-xs-6">
-                <a href="bloodbank"><button class="modernBtn">Blood Bank</button></a>
+                <a href="/bloodbank/"><button class="modernBtn">Blood Bank</button></a>
               </div>
               <div class="col-xs-6">
-                <a href="attendance"><button class="modernBtn">Attendence</button></a>
+                <a href="/attendance/"><button class="modernBtn">Attendence</button></a>
               </div>
             </div>
           </div>

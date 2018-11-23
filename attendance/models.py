@@ -9,7 +9,7 @@ class NSSUnits(models.Model):
 
     def __str__(self):
         return self.name
-
+genderchoice=[("M","Male"),("F","Female")]
 class Students(models.Model):
     name = models.CharField(max_length=30)
     adno = models.CharField(max_length=30)
@@ -17,7 +17,7 @@ class Students(models.Model):
     gender = models.CharField(max_length=1,choices=genderchoice)
     dob = models.CharField(max_length=10)
     unit_number = models.CharField(max_length=3)
-    
+
     def publish(self):
         self.published_date = timezone.now()
         self.save()

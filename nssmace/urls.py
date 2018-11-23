@@ -22,5 +22,7 @@ urlpatterns = [
     path('bloodbank/',include('bloodbank.urls')),
     path('admin/', admin.site.urls),
     path('',include('django.contrib.auth.urls')),
-    path('',views.index)
+    path('',views.index),
+    path('index/',views.index),
+    path('logout/',views.logout),
 ]

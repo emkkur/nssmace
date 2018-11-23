@@ -6,3 +6,7 @@ from django.shortcuts import redirect
 def index(request):
 
 	return render(request, 'dashboard.html')
+
+def logout(request):
+
+	return render(request, 'dashboard.html')
