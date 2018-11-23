@@ -1,0 +1,28 @@
+{% load django_tables2 %}
+	
+
+	<form method="post">
+		
+		<table border="1" cellpadding="5">
+			<tr>
+				<th>Sl.No</th>
+				<th>Admission No</th>
+				<th>Student Name</th>
+				<th>Date of Birth</th>
+				<th>is Present</th>
+			</tr>
+
+	    {% for row in output %}
+	    	<tr>
+	    		<td>{{forloop.counter}}</td>
+	    		<td>{{row.admission_no}}</td>
+	    		<td>{{row.name}}</td>
+	    		<td>{{row.dob}}</td>
+	    		<td><input type="checkbox" name="attend-{{row.id}}"></td>
+	    	</tr>
+	    {% endfor%}
+		</table>
+		<br/><br/>
+		<input type="submit" name="attendance">
+		{%csrf_token%}
+	</form>

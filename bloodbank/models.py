@@ -10,11 +10,7 @@ class Donor(models.Model):
                ('AB-', 'AB-'),
                ('AB+', 'AB+'),
                )
-    genderchoice = (('M', 'Male'),
-               ('F', 'Female'),
-               ('O', 'Other'),
-              )
-
+    genderchoice = (('M', 'Male'),('F', 'Female'), ('O', 'Other'), )
     name = models.CharField(max_length=30)
     age = models.IntegerField()
     gender = models.CharField(max_length=1,choices=genderchoice)

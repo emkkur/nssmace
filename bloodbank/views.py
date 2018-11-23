@@ -11,12 +11,7 @@ def results(request):
 
 	location_filter = request.GET.get('location','')
 	bloodtype_filter = request.GET.get('blood_type','')
-	print(location_filter)
-	print(bloodtype_filter)
 
 	output = Donor.objects.filter(location__contains=location_filter,blood_type__contains=bloodtype_filter);
-
-	for row in output:
-		print(row)
 
 	return render(request, 'results.html', {'form':form,'output': output})

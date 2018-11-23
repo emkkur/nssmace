@@ -1,0 +1,5 @@
+{% load django_tables2 %}
+
+    {% for row in output %}
+    	<a href="unit/{{row.id}}/new">{{row.name}}</a><br/>
+    {% endfor%}
