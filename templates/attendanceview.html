@@ -1,0 +1,24 @@
+{% load django_tables2 %}
+	
+
+<table border="1" cellpadding="5">
+	<tr>
+		<th>Date</th>
+		<th>Unit</th>
+		<th>Taken By</th>
+		<th>Absentees</th>
+	</tr>
+
+{% for row in output %}
+	<tr>
+		<td>{{row.date}}</td>
+		<td>{{row.unit.name}}</td>
+		<td>{{row.taken_by}}</td>
+		<td>
+			{% for feature in output.absentees.all %}
+			   {{ feature }}
+			{% endfor %}
+		</td>
+	</tr>
+{% endfor%}
+</table>
