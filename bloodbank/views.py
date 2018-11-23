@@ -1,11 +1,13 @@
 from django.http import HttpResponse
 from django.shortcuts import render
 from bloodbank.forms import PostForm
-from blood.models import Donor
+from django.forms import ModelForm
+from bloodbank.models import Donor
 
 class BloodDonors(ModelForm):  
-           class Meta:  
-               model = Donor 
+	class Meta:
+		model = Donor
+		fields = '__all__' 
 
 
 def results(request):
