@@ -33,6 +33,8 @@ STATIC_URL = '/assets/'
 STATICFILES_DIRS = [os.path.join(BASE_DIR, "assets"),]
 
 INSTALLED_APPS = [
+
+    "django_tables2",
     'attendance',
     'bloodbank',
     'django.contrib.admin',
